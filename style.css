@@ -33,6 +33,10 @@ header{
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
+header .nav-bar.nav-link{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 .logo{
     cursor: pointer;
     color: var(--orange);
@@ -70,10 +74,6 @@ header{
     color: var(--lightbrown);
 }
 
-.icons{
-    color: var(--orange);
-}
-
 a.button {
     color: #fff;
     border: 1px solid red;
@@ -89,6 +89,18 @@ a.button {
       ;
   }
 
+  header .icons #menu{
+      display: none;
+  }
+
+  header .icons i{
+    cursor: pointer;
+    margin-left: .5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--orange);
+  }
+
   @media (max-width: 768px){
       header .icons #menu{
           display: inline-block;
@@ -96,7 +108,7 @@ a.button {
 
       header .nav-bar{
           position: absolute;
-          top: 5%;
+          top: 7%;
           left: 0;
           right: 0;
           background-color: #fff;

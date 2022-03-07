@@ -208,30 +208,27 @@ a.button {
   }
 
   .more-info .container{
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap
+      display: grid;
+      grid-template-columns: repeat(2, minmax(10rem, 60rem));
+      grid-template-rows: repeat(2, minmax(5rem, 25rem));
+      place-items: center;
   }
 
   .more-info .container .image{
-    height: auto;
+    height: 100%;
     width: 100%;
   }
 
   .more-info .container .right-item{
     width: 100%;
-    background: green;
     height: 100%;
+    background: green;
   }
 
   .more-info .container .left-item{
     width: 100%;
-    background: green;
     height: 100%;
+    background: green;
 }
 
   @media (max-width: 768px){

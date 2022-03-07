@@ -43,12 +43,12 @@ header{
     padding: 0.5rem 1rem;
 }
 
-.nav-bar li a{
+.nav-bar li a.nav-link{
     color: var(--orange);
     position: relative;
 }
 
-.nav-bar li a::after{
+.nav-bar li a.nav-link::after{
     content: '';
     position: absolute;
     left: 0;
@@ -61,7 +61,7 @@ header{
     transition: transform 250ms ease-in;
 }
 
-.nav-bar li a:hover:after{
+.nav-bar li a.nav-link:hover:after{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -75,18 +75,16 @@ header{
 }
 
 a.button {
-    position: absolute;
     color: #fff;
     border: 1px solid red;
     border-radius: 0.5rem;
     background: red;
-    margin-right: 25px;
     padding: 1rem;
-    right: 35rem;
-    top: 0.5rem;
+
   }
 
   a.button:hover{
       color: red;
-      background-color: #fff;
+      background-color: #fff
+      ;
   }

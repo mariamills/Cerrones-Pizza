@@ -4,6 +4,7 @@
     --orange: #E17C23;
     --lightbrown: #774F46;
     --darkbrown: #402E32;
+    --niceredd: hsl(0, 70%, 50%);
 }
 
 *{
@@ -40,6 +41,7 @@ header .nav-bar.nav-link{
 .logo{
     cursor: pointer;
     color: var(--orange);
+    font-size: 1.5rem;
 }
 
 .nav-bar li{
@@ -76,15 +78,15 @@ header .nav-bar.nav-link{
 
 a.button {
     color: #fff;
-    border: 1px solid red;
+    border: 1px solid var(--niceredd);
     border-radius: 0.5rem;
-    background: red;
+    background: var(--niceredd);
     padding: 1rem;
 
   }
 
   a.button:hover{
-      color: red;
+      color: var(--niceredd);
       background-color: #fff
       ;
   }
@@ -99,6 +101,77 @@ a.button {
     text-align: center;
     font-size: 2rem;
     color: var(--orange);
+  }
+
+  .home video{
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+  }
+
+  .content{
+      display: flex;
+      height: 65vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  .content h1{
+      font-size: 3.5rem;
+      color: var(--orange);
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+  }
+
+  .content h1 span{
+      text-decoration: underline;
+      color: var(--niceredd);
+      text-transform: uppercase;
+      font-style: oblique;
+      }
+
+  .slider-nav{
+      z-index: 1;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      transform: translateY(80px);
+      margin-bottom: 12px;
+      box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+      transition: 0.3s ease;
+  }
+
+  .slider-nav .nav-btn{
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0.2rem;
+  }
+
+  .slider-nav .nav-btn.active{
+      background: var(--orange);
+  }
+
+  .slider-nav .nav-btn:hover{
+    transform: scale(1.2);
+  }
+
+  .video-slide{
+      position: absolute;
+      width: 100%;
+      clip-path: circle(0% at 50% 50%);
+  }
+
+  .video-slide.active{
+      clip-path: circle(150% at 0 50%);
+      transition: 2s ease;
+      transition-property: clip-path;
   }
 
   @media (max-width: 768px){

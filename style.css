@@ -88,3 +88,34 @@ a.button {
       background-color: #fff
       ;
   }
+
+  @media (max-width: 768px){
+      header .icons #menu{
+          display: inline-block;
+      }
+
+      header .nav-bar{
+          position: absolute;
+          top: 5%;
+          left: 0;
+          right: 0;
+          background-color: #fff;
+          border-top: .1rem solid rgba(0,0,0, .2);
+          border-bottom: .1rem solid rgba(0,0,0, .2);
+          padding: 1rem;
+          clip-path:polygon(0 0, 100% 0, 100% 0, 0 0)
+      }
+      header .nav-bar li{
+        display: block;
+        margin: 1rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+        background: #eee;
+        border-radius: 1rem;
+    }
+    header a.button{
+        color: var(--orange);
+        background-color: #eee;
+        border: none;
+    }
+  }

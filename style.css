@@ -73,3 +73,20 @@ header{
 .icons{
     color: var(--orange);
 }
+
+a.button {
+    position: absolute;
+    color: #fff;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    background: red;
+    margin-right: 25px;
+    padding: 1rem;
+    right: 35rem;
+    top: 0.5rem;
+  }
+
+  a.button:hover{
+      color: red;
+      background-color: #fff;
+  }

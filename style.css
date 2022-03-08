@@ -224,7 +224,15 @@ a.button {
       grid-template-rows: repeat(2, minmax(5rem, 25rem));
   }
 
-  .more-info .container .image{
+  .more-info .container .left-img{
+    background: url(/media/Pizza1.png);
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  .more-info .container .right-img{
+    background: url(/media/Pizza2.png);
     height: 100%;
     width: 100%;
     opacity: 0.7;
@@ -237,7 +245,8 @@ a.button {
     width: 100%;
     height: 100%;
     /* background: repeating-linear-gradient(-45deg,var(--niceredd) 0% 5%,transparent 5% 10%); */
-    background: radial-gradient(circle at 50% 40%, #ffffff, #fffaf9, #ffeeea, #ffdbd4, #ffc4b9, #fdaa9b, #f78f7e, #f07462, #e85a4a, #e04237, #db2f2b, #d92626);
+    background: url(/media/black-texture-background.jpg);
+    color: #fff;
   }
 
   .more-info .container .left-item{
@@ -247,7 +256,8 @@ a.button {
     width: 100%;
     height: 100%;
     /* background: repeating-linear-gradient(45deg,var(--green) 0% 5%,transparent 5% 10%); */
-    background: radial-gradient(circle at 50% 40%, #ffffff, #fafcf9, #ecf4e9, #d8e9d2, #bfdab5, #a3ca95, #85b976, #68a957, #4b9b3b, #2f8f22, #14870c, #008400);
+    background: url(/media/red-texture-background.jpg);
+    color: #fff;
 }
 
 .btn{
@@ -361,7 +371,7 @@ footer{
           border-top: .1rem solid rgba(0,0,0, .2);
           border-bottom: .1rem solid rgba(0,0,0, .2);
           padding: 1rem;
-          clip-path:polygon(0 0, 100% 0, 100% 0, 0 0)
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
       }
       header .nav-bar li{
         display: block;

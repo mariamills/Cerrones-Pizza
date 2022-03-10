@@ -22,7 +22,20 @@ html{
 
 body{
     height: 100vh;
-    background-color: #fff;
+    background-color: white;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    width: #eee;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--niceredd);
+    border-radius: 1rem;
 }
 
 header{
@@ -120,11 +133,11 @@ a.button {
       transition: all 1.2s linear;
   }
 
-  .video1{
+.video1{
       opacity: 1;
   }
 
-  .video2{
+.video2{
     opacity: 0;
 }
 
